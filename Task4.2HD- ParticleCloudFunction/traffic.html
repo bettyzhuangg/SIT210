@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+    <style>
+      body {
+        background-color: linen;
+        text-align: center;
+        margin-top: 20%;
+      }
+
+      h1 {
+        color: maroon;
+        margin-left: 40px;
+      }
+
+      #submitButton {
+        margin-top: 20px;
+        width: 100px;
+        background-color: maroon;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+      </style>
+   </head>
+   <body>
+    <form action="https://api.particle.io/v1/devices/e00fce68b83e11e7ce371bbd/traffic_control" method="POST">
+     <h1>Toggle The Traffic Lights</h1>
+     <input type="hidden" name="access_token" value=f98e16611efa346116371b26faf3a726f2e8caff>
+     <br>
+     <input type="radio" name="color" value="red">Turn red light on.
+     <br>
+     <input type="radio" name="color" value="green">Turn green light on.
+     <br>
+     <input type="radio" name="color" value="yellow">Turn yellow light on.
+     <br>
+     <input type="radio" name="color" value="off">Turn all lights off.
+     <br>
+     <button id = "submitButton">Submit</button>
+    </form>
+    </body>
+  </html>

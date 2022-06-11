@@ -17,9 +17,5 @@ if (isset($_POST['light'])) {
 	$myfile = fopen("light.txt", "r");
 	echo fread($myfile,filesize("light.txt"));
 	fclose($myfile);
-} else if(isset($_GET['light'])){
-	$myfile = fopen("light.txt", "r");
-	echo fread($myfile,filesize("light.txt"));
-	fclose($myfile);
 } 
 ?>
